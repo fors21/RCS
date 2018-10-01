@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="container1">
+    <form class="form-horizontal" id="form1">
+        <div class="form-group">
+            <label for="Name" class="col-sm-2 control-label">Enter Your Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Name"/>
+            </div>   
+        </div>
+         
+        <div class="form-group">
+            <label for="MailId" class="col-sm-2 control-label">Enter Your Mail-ID: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="MailId"/>
+            </div>
+        </div>
+
+       <div class="form-group">
+            <label >Radio izvÄ“lne:</label>
+            <span>Male</span>
+            <div class="col-sm-10">
+                <input type="radio" name="gender" value="Male">
+            </div>
+            <span>Female</span>
+            <div class="col-sm-10">
+             <input type="radio" name="gender" value="Female">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Password1" class="col-sm-2 control-label">Creat Your password:</label>
+            <div class="col-sm-10">
+                 <input type="text" class="form-control" id="Password1"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Password2" class="col-sm-2 control-label">Confirm Your password:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Password2"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Mobile" class="col-sm-2 control-label">Mobile No:</label>
+            <div class="col-sm-10">
+                <input type="text"  class="form-control" id="Mobile"/>
+            </div>
+        </div>
+        
+       <br/><br/>
+        <div class="form-group">
+                <label for="dropdown" class="col-sm-2 control-label"> Choose Your Dob:</label>
+                <div class="col-sm-10">
+                    <input type="date" id="dropdown"  class="form-control">
+                </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-10">
+                <textarea name="messege" rows="5" cols="40" >
+                </textarea>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+                <select id=ā€¯autocountryselectā€¯>
+                        <option value=ā€¯LVā€¯>Latvija</option>
+                        <option value=ā€¯LTā€¯>Lietuva</option>
+                        <option value=ā€¯EEā€¯>Igaunija</option>
+                        <option value=ā€¯PLā€¯>Polija</option>
+                </select>
+        </div>
+
+
+        <br/><br/>
+        <input type="submit" value="Iesniegt"/>
+        <input type="submit" value="Notīrīt">
+    </form>
+
+    <script>
+        $(function(){
+            $("#form1").submit(function(){
+                alert("Forma tika iesūtīta");
+                return false;
+                
+            })
+        })
+    </script>
+    <script>
+            $(function(){
+                $("#form1").submit1(function(){
+                    alert("Parole ievadīta nepareizi");
+                    return false;
+                })
+            })
+        </script>
+</div>
+</div>
+</body>
+</html>

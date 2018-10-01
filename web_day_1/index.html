@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World!</title>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+    <h6>Hello World!</h6>
+
+
+    <p>Lorem <b>Lorem</b>ipsum <strong>lorem</strong>dolor &copy; &nbsp; &nbsp;&nbsp;&nbsp;sit amet, <i>sit</i>i></i>consectetur
+        <em>strong</em>adipisicing elit. Et itaque ab pariatur laboriosam eius beatae deleniti obcaecati voluptatum, consectetur
+        odit quod nisi adipisci quis! Molestias vel numquam nesciunt ad nihil!</p>
+    <p>foo</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et itaque ab <sup>sub</sup> <sub>sub</sub> pariatur laboriosam
+        <del>dzēst</del> eius beatae deleniti obcaecati voluptatum, consectetur odit quod nisi adipisci quis! Molestias vel
+        numquam nesciunt ad nihil!</p>
+
+    <a href="some_folder/second_page.html">some link</a>
+    <!-- snake_case (html failos)
+camelCase  (pārsvarā izmanto JAVA un PHP)
+kebab-case (html) -->
+
+
+    <div>foo</div>
+    <div>foo</div>
+    <!-- div ir bloka elements -->
+
+    <span>bar</span>
+    <span>bar</span>
+    <!-- izmanto līnijas elementā  -->
+    <!-- 
+saraksti izmantojot <ol> mēs veidojam sarakstu, ar type mēs maiām secības no skaitļiem uz burtiem, izmantojot "I" būs romiešu cipari-->
+
+    <ol type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <!-- vienkārš sarakst, ja nenorādam type, bet var mainīt type= circle, dot,  -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2
+
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+        </li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+
+    <dl>
+        <dt>Title 1</dt>
+        <dd>content</dd>
+        <dt>Title 2</dt>
+        <dd>content</dd>
+        <dt>Title 3</dt>
+        <dd>content</dd>
+
+
+    </dl>
+
+    <!-- veidojam tabulu -->
+    <table border="1">
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td colspan="2">item 3</td>
+            <td>item 4</td>
+
+            <!-- ar colspan mēs norādām cik šūnas aizņems tresša šūna, horizontāli tiek apvienotas šūnas -->
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td rowspan="2">item 3</td>
+            <td>item 4</td>
+            <td>item 5</td>
+            <!-- ar rowspan mēs apvienojam kolonās, piemērā tiek apvienotas divas kolonnas -->
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+
+            <td>item 4</td>
+            <td>item 5</td>
+
+        </tr>
+
+    </table>
+
+    <form action="some_folder/second_page.html" method="post">
+        <!-- ar action var norā'dit uz kuru vietu sūtīt nospiežot pogu, pieliekot klāt post tiek šifrēta paroles sūtīšana-->
+        <div>
+            <label for="username-for-our-amazing-form">Username</label>
+        </div>
+        <div>
+            <!-- Ja gribam sūtīt informāciju tad pieškirām atribūtu, piemēram, name ="username" -->
+            <input name="username" id="username-for-our-amazing-form" value="somthing" placeholder="username">
+
+        </div>
+        <div>
+            <label for="password">Pasword</label>
+        </div>
+        <div>
+            <input name="password" id="password" type="password" placeholder="password">
+            <!-- ievadod "pasword", tad parole tiek paslēpta -->
+
+        </div>
+        <div>
+            <input type="checkbox" id="terms"><label> I agree with the terms</label>
+        </div>
+
+        <div>
+            <input type="radio" id="terms1" name="somthing">
+            <label> Item 1</label>
+        </div>
+        <div>
+            <input type="radio" id="terms2" name="somthing" checked>
+            <label> Item 2</label>
+            <!-- "checked" jau iezīmēju konkrēto atribūtu -->
+
+            <!-- ar name="somthing" mēs apvienojam pogas, lai strādātu kopā -->
+        </div>
+        <div>
+            <input type="radio" id="terms3" name="somthing">
+            <label> Item 3</label>
+        </div>
+        <div>
+            <label for="country">Country</label>
+
+        </div>
+
+        <div>
+            <select id="country">
+                <option>Chose your contry.......</option>
+                <option>Latvija</option>
+                <option>Lietuva</option>
+                <option>Igaunija</option>
+                <option>Polija</option>
+                <option>Vācija</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="long-text">Some long text
+
+            </label>
+            <div>
+                <textarea id="long-text" rows="10" cols="50">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ea minima enim repellat, error voluptatibus maxime praesentium minus ducimus 
+                corporis officia iusto libero incidunt omnis obcaecati a eligendi dolores ullam.
+                Alias?
+                    </textarea>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <input type="submit" value="Login">
+
+            <!-- input ar value piešķiram vērtību, izmantojot placeholder parādās teksts, kuram uzpiežot tas pazūd -->
+        </div>
+    </form>
+
+    <!-- input laukam var izmantot atribūtu id, tas ir idenfikātors kontrētajam elementam, vienam elementam tikai viens ID, 
+        norādot label  in iput, sakrītot atribūtiem, lauks iezīmējas-->
+
+
+</body>
+
+</html>
